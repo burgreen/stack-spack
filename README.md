@@ -37,7 +37,7 @@ $ cd <stack_dir>
 $ ./scripts/compiler.sh add
 $ ./scripts/compiler.sh avail
 
-$ ./scripts/try-compiler.sh try gcc@4.4.7
+$ ./scripts/compiler.sh try gcc@4.4.7
 
 $ module load gcc/4.9.3
 $ ./scripts/compiler.sh add gcc@4.9.3
