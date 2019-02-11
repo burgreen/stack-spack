@@ -1,7 +1,7 @@
 stack-spack
 ===========
 
-This project contains bash scripts to setup a Spack-based software stack and find a suitable system compiler to continue building the stack.
+This project contains bash scripts to setup a Spack-based software stack and finds a suitable system compiler that is able to build the software stack.
 
 Useful information before beginning
 -----------------------------------
@@ -19,7 +19,7 @@ Installation
 
 where `<stack_dir>` is path of the desired software stack.
 
-Finding suitable system compilers that install Spack packages 
+Finding a suitable system compiler that can install Spack packages 
 -------------------------------------------------------------
 
 - In our limited experience, many system compilers fail for various reasons to install the full Proteus stack. 
@@ -29,9 +29,6 @@ Finding suitable system compilers that install Spack packages
 - One can use a `system gcc-7.3.0` to build the `Spack gcc-7.3.0`. In fact, we had to do this very thing in the past in order to reliably build some ornery software stacks on our systems. 
 
 - On MacOS systems, one can build `gcc-7.3.0` using a `clang` compiler, but `gcc` on a Mac does not play well with `cmake` and other packages. 
-
-**Be advised: 
-A system compiler may succeed in installing the small package (libelf) related to try-compiler.sh, but may fail for various other reasons during the build of the more complex stack packages. If this happens, setup another system compiler, and try again.**
 
 - Below is a typical work flow that selects gcc-7.3.0 as its final system compiler.
 ```
@@ -51,3 +48,6 @@ $ ./scripts/compiler.sh add gcc@7.3.0.
 $ ./scripts/compiler.sh try gcc@7.3.0.
 $ ./scripts/compiler.sh finalize gcc@7.3.0.
 ```
+
+**Be advised: 
+A system compiler may succeed in installing the small package (libelf) related to try-compiler.sh, but may fail for various other reasons during the build of the more complex stack packages. If this happens, setup another system compiler, and try again.**
