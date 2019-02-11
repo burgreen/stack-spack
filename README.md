@@ -17,7 +17,9 @@ Installation
 
 `$ ./install-spack.sh <stack_dir>`
 
-where `<stack_dir>` is path of the desired software stack.
+where `<stack_dir>` is path of the desired software stack. For example:
+
+`$ ./install-spack.sh ../stack-proteus`
 
 Finding a suitable system compiler that can install Spack packages 
 -------------------------------------------------------------
