@@ -39,7 +39,7 @@ fi
 
 mkdir -p $1
 
-cp $current/0-README.md $1/0-README.md
+cp $current/README.md $1/0-README.md
 
 cat >> $1/0-README.md << EOF
 
@@ -82,6 +82,8 @@ echo Installing other tarballs
 
 tar xf $current/$pkg_libelf
 tar xf $current/$scripts
+
+chmod +x scripts/compiler.sh
 
 #--------------------------------------------
 # 5. write file: 1-setup-spack.sh
