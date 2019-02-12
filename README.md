@@ -36,6 +36,9 @@ Finding a suitable system compiler that can install Spack packages
 ```
 $ cd <stack_dir>
 
+$ source 1-setup-spack.sh
+$ echo $SPACK_ROOT   # the output should be same as your current directory
+
 $ ./scripts/compiler.sh add
 $ ./scripts/compiler.sh avail
 
