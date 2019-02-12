@@ -1,7 +1,7 @@
 stack-spack
 ===========
 
-This project contains bash scripts to setup a Spack-based software stack and finds a suitable system compiler that is able to build the software stack.
+This project contains bash scripts to setup a Spack-based software stack and find a suitable working system compiler.
 
 Useful information before beginning
 -----------------------------------
@@ -22,7 +22,7 @@ where `<stack_dir>` is path of the desired software stack. For example:
 `$ ./install-spack.sh ../stack-proteus`
 
 Find a suitable system compiler that can install Spack packages 
--------------------------------------------------------------
+---------------------------------------------------------------
 
 - In our limited experience, many system compilers fail for various reasons to install the full Proteus stack. 
 
