@@ -32,7 +32,7 @@ Find a suitable system compiler that can install Spack packages
 
 - On MacOS systems, one can build `gcc-7.3.0` using a `clang` compiler, but `gcc` on a Mac does not play well with `cmake` and other packages. 
 
-- Below is a typical work flow that selects gcc-7.3.0 as its final system compiler.
+- Below is a typical work flow that selects `gcc-7.3.0` as its final system compiler.
 ```
 $ cd <stack_dir>
 
