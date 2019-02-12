@@ -30,7 +30,7 @@ Find a suitable system compiler that can install Spack packages
 
 - One can use a `system gcc-7.3.0` to build the `Spack gcc-7.3.0`. In fact, we had to do this very thing in the past in order to reliably build some ornery software stacks on our systems. 
 
-- On MacOS systems, one can build `gcc-7.3.0` using a `clang` compiler, but `gcc` on a Mac does not play well with `cmake` and other packages. 
+- On MacOS systems, one can build `gcc-7.3.0` using a `clang` compiler, but `gcc` on a Mac does not play well with `cmake` and other packages. So, on MacOS, we recommend to stick with only `clang` compilers.
 
 - Below is a typical work flow that selects `gcc-7.3.0` as its final system compiler.
 ```
