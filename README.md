@@ -1,7 +1,7 @@
 stack-spack
 ===========
 
-This project contains bash scripts to setup a Spack-based software stack and find a suitable working system compiler.
+This project contains bash scripts to setup a Spack-based software stack and find a suitable system compiler.
 
 Useful information before beginning
 -----------------------------------
