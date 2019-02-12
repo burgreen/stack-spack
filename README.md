@@ -24,7 +24,7 @@ where `<stack_dir>` is path of the desired software stack. For example:
 Find a suitable system compiler that can install Spack packages 
 ---------------------------------------------------------------
 
-- In our limited experience, many system compilers fail for various reasons to install the full Proteus stack. 
+- In our limited experience, many system compilers fail for various reasons to install complex software stacks. 
 
 - On Linux systems, the approach that has been most consistent for us has been to build `gcc-7.3.0` and `binutils` using a suitable system compiler. Then, we use the installed `Spack gcc-7.3.0` to build the remaining software stack.
 
