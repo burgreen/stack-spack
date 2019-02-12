@@ -21,7 +21,7 @@ where `<stack_dir>` is path of the desired software stack. For example:
 
 `$ ./install-spack.sh ../stack-proteus`
 
-Finding a suitable system compiler that can install Spack packages 
+Find a suitable system compiler that can install Spack packages 
 -------------------------------------------------------------
 
 - In our limited experience, many system compilers fail for various reasons to install the full Proteus stack. 
