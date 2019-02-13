@@ -15,9 +15,9 @@ Ensure your system has the minimum Spack [prerequisites](https://spack.readthedo
 Installation
 ------------
 
-`$ ./install-spack.sh <stack_dir>`
+`$ ./install-spack.sh <stack_root>`
 
-where `<stack_dir>` is path of the desired software stack. For example:
+where `<stack_root>` is root directory of the desired software stack. For example:
 
 `$ ./install-spack.sh ../stack-proteus`
 
@@ -34,7 +34,7 @@ Find a suitable system compiler that can install Spack packages
 
 - Below is a typical work flow that selects `gcc-7.3.0` as its final system compiler.
 ```
-$ cd <stack_dir>
+$ cd <stack_root>
 
 $ source 1-setup-spack.sh
 $ echo $SPACK_ROOT   # the output should be same as your current directory
