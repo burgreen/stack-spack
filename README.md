@@ -51,7 +51,7 @@ $ ./scripts/compiler.sh try gcc@4.9.3
 $ module load gcc/7.3.0
 $ ./scripts/compiler.sh add gcc@7.3.0.
 $ ./scripts/compiler.sh try gcc@7.3.0.
-$ ./scripts/compiler.sh finalize gcc@7.3.0.
+$ ./scripts/compiler.sh use gcc@7.3.0.
 ```
 
 **Be advised: 

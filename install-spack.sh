@@ -71,9 +71,9 @@ echo Installing spack source: $spack_archive
 #rmdir $spack_archive
 
 unzip -o $spack_archive
-mv spack_develop/* $1
-mv spack_develop/.[a-z]* $1
-rmdir spack_develop
+mv spack-develop/* $1
+mv spack-develop/.[a-z]* $1
+rmdir spack-develop
 
 cd $1
 
