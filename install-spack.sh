@@ -21,7 +21,7 @@ fi
 
 current=$(pwd)
 
-spack_archive=spack-0.12.1
+spack_archive=spack-2019.02.12-f65a115.zip
 
 pkg_libelf=sources-thirdparty-libelf.tar
 scripts=scripts.tar
@@ -50,27 +50,30 @@ EOF
 # 2. write file: 3-names.sh
 #--------------------------------------------
 
-cat > _names << EOF
-#!/bin/bash
-
-EOF
-
-chmod +x _names
-
-mv _names $1/3-names.sh
+#cat > _names << EOF
+##!/bin/bash
+#
+#EOF
+#
+#chmod +x _names
+#
+#mv _names $1/3-names.sh
 
 #--------------------------------------------
 # 3. unarchive spack_archive
 #--------------------------------------------
 
-echo Installing spack source: $spack_archive.tar.gz
+echo Installing spack source: $spack_archive
 
-tar xfz $spack_archive.tar.gz
-#unzip -o $spack_archive.zip
+#tar xfz $spack_archive.tar.gz
+#mv $spack_archive/* $1
+#mv $spack_archive/.[a-z]* $1
+#rmdir $spack_archive
 
-mv $spack_archive/* $1
-mv $spack_archive/.[a-z]* $1
-rmdir $spack_archive
+unzip -o $spack_archive
+mv spack_develop/* $1
+mv spack_develop/.[a-z]* $1
+rmdir spack_develop
 
 cd $1
 
