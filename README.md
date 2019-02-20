@@ -56,3 +56,5 @@ $ ./scripts/compiler.sh use gcc@7.3.0.
 
 **Be advised: 
 A system compiler may succeed in installing the small package (libelf) related to try-compiler.sh, but may fail for various other reasons during the build of the more complex stack packages. If this happens, setup another system compiler, and try again.**
+
+version: 2019.02.19
