@@ -17,14 +17,12 @@ Installation
 
 ```
 $ ./install-spack.sh <stack_root>
-$ tar xfv stack-spack-var.tar -C <stack_root>
 ```
 
 where `<stack_root>` is root directory of the desired software stack. For example:
 
 ```
 $ ./install-spack.sh ../stack-2019.03
-$ tar xfv stack-spack-var.tar -C ../stack-2019.03
 ```
 
 Find a suitable system compiler that can install Spack packages 

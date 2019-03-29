@@ -25,6 +25,7 @@ spack_archive=spack-2019.02.12-f65a115.zip
 
 pkg_libelf=sources-thirdparty-libelf.tar
 scripts=scripts.tar
+var=stack-spack-var.tar
 
 #--------------------------------------------
 # 1. prelims
@@ -85,6 +86,7 @@ echo Installing other tarballs
 
 tar xf $current/$pkg_libelf
 tar xf $current/$scripts
+tar xf $current/$var
 
 chmod +x scripts/compiler.sh
 
